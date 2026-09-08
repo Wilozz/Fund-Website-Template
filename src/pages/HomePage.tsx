@@ -22,10 +22,25 @@ export function HomePage() {
             </section>
 
             {/* About us section */}
-            <section className="relative h-screen w-full text-black">
-            
-
-            
+            <section className="relative h-screen w-full text-black px-4 py-24">
+                <div className="max-w-5xl mx-auto flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x-3 divide-zinc-200">
+                    <div className="flex-1 py-6 sm:py-0 text-center">
+                        <p className="text-6xl font-bold">$50B</p>
+                        <p className="mt-2 text-zinc-500 text-sm">Assets Under Management</p>
+                    </div>
+                    <div className="flex-1 py-6 sm:py-0 text-center">
+                        <p className="text-6xl font-bold">20</p>
+                        <p className="mt-2 text-zinc-500 text-sm">Years Old</p>
+                    </div>
+                    <div className="flex-1 py-6 sm:py-0 text-center">
+                        <p className="text-6xl font-bold">100+</p>
+                        <p className="mt-2 text-zinc-500 text-sm">Current Projects Invested</p>
+                    </div>
+                    <div className="flex-1 py-6 sm:py-0 text-center">
+                        <p className="text-6xl font-bold">9%</p>
+                        <p className="mt-2 text-zinc-500 text-sm">Distribution Yield</p>
+                    </div>
+                </div>
             </section>
         </div>
     )
