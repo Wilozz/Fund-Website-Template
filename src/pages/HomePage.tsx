@@ -23,7 +23,7 @@ export function HomePage() {
             </section>
 
             {/* About us section */}
-            <section className="relative w-full text-black px-4 py-24">
+            <section className="relative h-screen w-full text-black px-4 py-24">
                 <div className="max-w-5xl text-center mx-auto">
                     <h1 className="text-2xl font-bold text-yellow-600">About Us</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi debitis unde qui mollitia laborum. Necessitatibus sapiente, dolorum nisi, rem vero nemo mollitia repudiandae ipsum delectus, temporibus molestias libero provident nobis!</p>
@@ -46,10 +46,8 @@ export function HomePage() {
                         <p className="mt-2 text-zinc-500 text-sm">Distribution Yield</p>
                     </div>
                 </div>
-            </section>
 
-            <section>
-                <div className="px-5 text-start mx-auto">
+                <div className="px-5 pt-10 text-start mx-auto">
                     <h1 className="text-base font-bold text-gray-500 opacity-70">Why Us</h1>
                     <hr className="w-50 border-t-2 border-gray-200 my-1"/>
                 </div>
@@ -69,7 +67,7 @@ export function HomePage() {
                 </div>
             </section>
         
-            <section className="h-screen py-10">
+            <section className="h-screen py-40">
                 <ProjectCarousel/>
             </section>
         </div>

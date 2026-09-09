@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import project1 from "../images/Project1.jpg";
 import project2 from "../images/Project2.jpeg";
 import project3 from "../images/Project3.jpg";
@@ -23,14 +23,19 @@ const projects = [
 
 export function ProjectCarousel() {
     const [index, setIndex] = useState(0)
+    
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setIndex((i) => (i + 1) % projects.length)
+        }, 2000)
 
-    const next = () => setIndex((i) => (i + 1) % projects.length)
-    const prev = () => setIndex((i) => (i - 1 + projects.length) % projects.length)
+        return () => clearInterval(timer)
+    }, [])
 
     const current = projects[index]
 
     return (
-        <div className="w-[70%] mx-auto flex h-500px shadow-xl rounded-lg overflow-hidden">
+        <div className="w-[70%] mx-auto flex h-125 shadow-xl rounded-lg overflow-hidden">
             <div className="w-[70%] h-full">
                 <img
                     src={current.image}
@@ -42,13 +47,16 @@ export function ProjectCarousel() {
                 <h3 className="text-2xl font-bold mb-4">{current.title}</h3>
                 <p className="text-zinc-500 text-sm">{current.description}</p>
 
-                <div className="flex gap-4 mt-8">
-                    <button onClick={prev} className="px-4 py-2 border rounded hover:bg-zinc-100">
-                        Prev
-                    </button>
-                    <button onClick={next} className="px-4 py-2 border rounded hover:bg-zinc-100">
-                        Next
-                    </button>
+                <div className="flex gap-2 mt-8">
+                    {projects.map((_, i) => (
+                        <button
+                            key={i}
+                            onClick={() => setIndex(i)}
+                            className={`h-1 rounded-full transition-all duration-300 ${
+                                i === index ? "w-8 bg-zinc-800" : "w-4 bg-zinc-300"
+                            }`}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
