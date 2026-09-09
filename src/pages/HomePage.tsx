@@ -1,4 +1,5 @@
 import BackgroundImg from "../images/Background.jpg"
+import { ProjectCarousel } from "./ProjectCarousel"
 
 export function HomePage() {
     return (
@@ -47,7 +48,7 @@ export function HomePage() {
                 </div>
             </section>
 
-            <section className="h-screen">
+            <section>
                 <div className="px-5 text-start mx-auto">
                     <h1 className="text-base font-bold text-gray-500 opacity-70">Why Us</h1>
                     <hr className="w-50 border-t-2 border-gray-200 my-1"/>
@@ -66,6 +67,10 @@ export function HomePage() {
                         <p className="text-zinc-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium dolorum similique error maxime veritatis aut quaerat et praesentium nobis debitis ut repellat consequatur enim voluptate, non facere odio. Ab?</p>
                     </div>
                 </div>
+            </section>
+        
+            <section className="h-screen py-10">
+                <ProjectCarousel/>
             </section>
         </div>
     )
