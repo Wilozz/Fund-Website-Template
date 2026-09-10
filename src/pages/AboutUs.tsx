@@ -19,8 +19,8 @@ export function AboutUs() {
                     <p className="mt-2 text-zinc-500 text-sm">Current Projects Invested</p>
                 </div>
                 <div className="flex-1 py-6 sm:py-0 text-center">
-                    <p className="text-6xl font-bold">9%</p>
-                    <p className="mt-2 text-zinc-500 text-sm">Distribution Yield</p>
+                    <p className="text-6xl font-bold">8%</p>
+                    <p className="mt-2 text-zinc-500 text-sm">Average Annual Distribution Yield</p>
                 </div>
             </div>
 
@@ -30,15 +30,15 @@ export function AboutUs() {
             </div>
             <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 py-2">
                 <div className="aspect-3/4 bg-gray-100 rounded-lg shadow-lg flex flex-col justify-start items-center text-center">
-                    <h1 className="py-5 text-yellow-600 font-bold text-2xl">Lowest Management Fees</h1>
+                    <h1 className="py-5 text-yellow-600 font-bold text-2xl">Quarterly Liquidity</h1>
                     <p className="text-zinc-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium dolorum similique error maxime veritatis aut quaerat et praesentium nobis debitis ut repellat consequatur enim voluptate, non facere odio. Ab?</p>
                 </div>
                 <div className="aspect-3/4 bg-gray-100 rounded-lg shadow-lg flex flex-col justify-start items-center text-center">
-                    <h1 className="py-5 text-yellow-600 font-bold text-2xl">aoeuh</h1>
+                    <h1 className="py-5 text-yellow-600 font-bold text-2xl">Senior Secured Lending</h1>
                     <p className="text-zinc-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium dolorum similique error maxime veritatis aut quaerat et praesentium nobis debitis ut repellat consequatur enim voluptate, non facere odio. Ab?</p>
                 </div>
                 <div className="aspect-3/4 bg-gray-100 rounded-lg shadow-lg flex flex-col justify-start items-center text-center">
-                    <h1 className="py-5 text-yellow-600 font-bold text-2xl">aoeuh</h1>
+                    <h1 className="py-5 text-yellow-600 font-bold text-2xl">Tranching Structures</h1>
                     <p className="text-zinc-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium dolorum similique error maxime veritatis aut quaerat et praesentium nobis debitis ut repellat consequatur enim voluptate, non facere odio. Ab?</p>
                 </div>
             </div>
