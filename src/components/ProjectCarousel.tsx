@@ -6,17 +6,17 @@ import project3 from "../images/Project3.jpg";
 const projects = [
     {
         title: "Project One",
-        description: "A nice house",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi amet molestias numquam aliquid repellat officiis molestiae similique. Consequatur sapiente, nemo doloribus numquam eos quia nesciunt repudiandae vitae, nobis facere itaque?",
         image: project1
     },
     {
         title: "Project Two",
-        description: "A nice house",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi amet molestias numquam aliquid repellat officiis molestiae similique. Consequatur sapiente, nemo doloribus numquam eos quia nesciunt repudiandae vitae, nobis facere itaque?",
         image: project2
     }, 
     {
         title: "Project Three",
-        description: "A nice house",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi amet molestias numquam aliquid repellat officiis molestiae similique. Consequatur sapiente, nemo doloribus numquam eos quia nesciunt repudiandae vitae, nobis facere itaque?",
         image: project3
     }
 ]
@@ -43,11 +43,11 @@ export function ProjectCarousel() {
                 />
             </div>
 
-            <div className="w-[30%] h-full bg-white flex flex-col justify-center p-8">
-                <h3 className="text-2xl font-bold mb-4">{current.title}</h3>
+            <div className="w-[30%] h-full bg-white flex flex-col justify-between p-8">
+                <h3 className="text-2xl font-bold mb-4 align-top text-black">{current.title}</h3>
                 <p className="text-zinc-500 text-sm">{current.description}</p>
 
-                <div className="flex gap-2 mt-8">
+                <div className="flex gap-2 mt-auto">
                     {projects.map((_, i) => (
                         <button
                             key={i}
