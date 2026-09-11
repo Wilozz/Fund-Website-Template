@@ -2,7 +2,7 @@ import { ProjectCarousel } from "../components/ProjectCarousel"
 
 export function Projects() {
     return (
-        <section className="h-screen ">
+        <section id="projects" className="h-screen ">
             <div className="px-5 pt-30 text-start mx-auto">
                 <h1 className="text-base font-bold text-gray-500 opacity-70">Our Projects</h1>
                 <hr className="w-50 border-t-2 border-gray-200 my-1"/>

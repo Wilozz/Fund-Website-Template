@@ -1,6 +1,6 @@
 export function AboutUs() {
     return (
-        <section className="relative h-screen w-full text-black px-4 py-24">
+        <section id="about" className="relative h-screen w-full text-black px-4 py-24">
             <div className="max-w-5xl text-center mx-auto">
                 <h1 className="text-2xl font-bold text-yellow-600">About Us</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi debitis unde qui mollitia laborum. Necessitatibus sapiente, dolorum nisi, rem vero nemo mollitia repudiandae ipsum delectus, temporibus molestias libero provident nobis!</p>
@@ -19,7 +19,7 @@ export function AboutUs() {
                     <p className="mt-2 text-zinc-500 text-sm">Current Projects Invested</p>
                 </div>
                 <div className="flex-1 py-6 sm:py-0 text-center">
-                    <p className="text-6xl font-bold">8%</p>
+                    <p className="text-6xl font-bold">9%</p>
                     <p className="mt-2 text-zinc-500 text-sm">Average Annual Distribution Yield</p>
                 </div>
             </div>
